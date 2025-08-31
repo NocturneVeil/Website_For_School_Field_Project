@@ -32,23 +32,3 @@ It is a beginner-friendly website built with **HTML** and **CSS**, showcasing th
 
 ---
 
-## 📂 Project Structure
-Website_for_School_Field_Project/
-│
-├── Home.html
-├── About-us.html
-├── Contact-us.html
-├── Login.html
-├── CSS files/
-│ ├── HOME.css
-│ ├── About.css
-│ ├── Contact.css
-│ └── Login.css
-├── Logo/
-│ ├── Black logo - no background.png
-│ ├── Color logo with background.png
-│ ├── White logo - no background.png
-│ └── color logo - no background.png
-│ 
-├── How_to_use.md
-└── README.md
