@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="CSS files\Login.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>Login Form</header>
+      <form>
+        <div class="input-field">
+          <input type="text" required>
+          <label>Email or Username</label>
+        </div>
+        <div class="input-field">
+          <input class="pswrd" type="password" required>
+          <span class="show">SHOW</span>
+          <label>Password</label>
+        </div>
+        <div class="button">
+          <div class="inner"></div>
+          <button onclick="Home .html"><a class="redirect" href="Home .html">LOGIN</a></button>
+        </div>
+      </form>
+      <div class="auth">Or login with</div>
+      <div class="links">
+        <div class="facebook">
+          <i class="fab fa-facebook-square"><span> <a  href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fcampaign%2Flanding.php%3Fcampaign_id%3D14884913640%26extra_1%3Ds%257Cc%257C589460569891%257Cb%257Cfacebook%2Bsignin%257C%26placement%26creative%3D589460569891%26keyword%3Dfacebook%2Bsignin%26partner_id%3Dgooglesem%26extra_2%3Dcampaignid%253D14884913640%2526adgroupid%253D128696221832%2526matchtype%253Db%2526network%253Dg%2526source%253Dnotmobile%2526search_or_content%253Ds%2526device%253Dc%2526devicemodel%253D%2526adposition%253D%2526target%253D%2526targetid%253Dkwd-3821998899%2526loc_physical_ms%253D1007796%2526loc_interest_ms%253D%2526feeditemid%253D%2526param1%253D%2526param2%253D%26gclid%3DCj0KCQiApKagBhC1ARIsAFc7Mc52NAimkVzMZLi1qZ2WbvByZxvC7ZWseupsWw792Y4cD2lljKwlMgIaAuQcEALw_wcB"></a> 
+        Facebook</span></i>
+        </div>
+        <div class="google">
+          <i class="fab fa-google-plus-square"><span><a  href="https://accounts.google.com/signin">Google</a></span></i>
+        </div>
+      </div>
+      <div class="signup">
+        Not a member? <a href="Sign-up.html">Signup now</a>
+        
+      </div>
+    </div>
+    <script>
+      var input = document.querySelector('.pswrd');
+      var show = document.querySelector('.show');
+      show.addEventListener('click', active);
+      function active(){
+        if(input.type === "password"){
+          input.type = "text";
+          show.style.color = "#1DA1F2";
+          show.textContent = "HIDE";
+        }else{
+          input.type = "password";
+          show.textContent = "SHOW";
+          show.style.color = "#111";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="CSS files\Signup.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>Sign-Up</header>
+      <form>
+        <div class="input-field">
+          <input type="email" required>
+          <label>Enter your E-mail</label>
+        </div>
+        <div class="input-field">
+          <input class="pswrd" type="password" required>
+          <span class="show">SHOW</span>
+          <label>Password</label>
+        </div>
+        <div class="input-field">
+          <input class="pswrd" type="password" required>
+          <span class="show">SHOW</span>
+          <label>Password</label>
+        </div>
+        <div class="button">
+          <div class="inner"></div>
+          <button><a class="redirect" href="Home .html">Sign-Up</a></button>
+        </div>
+      </form>
+      <div class="auth">
+        <a href="https://www.bing.com/ck/a?!&&p=ac9725b6d63b0a70JmltdHM9MTY3ODMyMDAwMCZpZ3VpZD0yNjI1MjFmMi03MDFkLTZmN2QtMzU3MS0zM2I3NzFiMDZlMzkmaW5zaWQ9NTQxNw&ptn=3&hsh=3&fclid=262521f2-701d-6f7d-3571-33b771b06e39&psq=login+facebook&u=a1aHR0cDovL3d3dy5mYWNlYm9vay5jb20vbG9naW4ucGhw&ntb=1">
+           Sign-up with</a></div>
+      <div class="links">
+        <div class="facebook">
+          <i class="fab fa-facebook-square"><span>Facebook</span></i>
+        </div>
+        <div class="google">
+          <i class="fab fa-google-plus-square"><span ><a href="https://accounts.google.com/signin">Google</a></span></i>
+        </div>
+      </div>
+      <div class="signup">
+        Already a member? <a href="Login.html">Login now</a>
+      </div>
+    </div>
+    <script>
+      var input = document.querySelector('.pswrd');
+      var show = document.querySelector('.show');
+      show.addEventListener('click', active);
+      function active(){
+        if(input.type === "password"){
+          input.type = "text";
+          show.style.color = "#1DA1F2";
+          show.textContent = "HIDE";
+        }else{
+          input.type = "password";
+          show.textContent = "SHOW";
+          show.style.color = "#111";
+        }
+      }
+    
+    </script>
+
+  </body>
+</html>
